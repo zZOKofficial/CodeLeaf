@@ -5,6 +5,7 @@ import android.app.*;
 import android.content.*;
 import android.content.res.*;
 import android.graphics.*;
+import android.graphics.Typeface;
 import android.graphics.drawable.*;
 import android.media.*;
 import android.net.*;
@@ -46,6 +47,8 @@ public class HomeActivity extends AppCompatActivity {
 	}
 	
 	private void initializeLogic() {
+		binding.codeleafText.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/display_bold.ttf"), 0);
+		binding.homeSweetHome.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_regular.ttf"), 0);
 	}
 	
 }
