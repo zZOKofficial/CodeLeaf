@@ -1,0 +1,44 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear_background"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:background="?colorSurface"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/codeleaf_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp"
+			android:gravity="left"
+			android:text="@string/app_name"
+			android:textSize="20sp"
+			android:textColor="?colorPrimary" />
+		<TextView
+			android:id="@+id/subtitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:text="বাংলায় প্রোগ্রামিং"
+			android:textSize="12sp"
+			android:textColor="?colorSecondary" />
+		<TextView
+			android:id="@+id/credit"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="center_horizontal|bottom"
+			android:text="This is the very first build of CodeLeaf. ©️zZOK, 2025"
+			android:textSize="10sp"
+			android:textColor="?colorOnSurfaceVariant" />
+	</LinearLayout>
+</LinearLayout>
