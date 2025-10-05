@@ -5,7 +5,6 @@ import android.app.*;
 import android.content.*;
 import android.content.res.*;
 import android.graphics.*;
-import android.graphics.Typeface;
 import android.graphics.drawable.*;
 import android.media.*;
 import android.net.*;
@@ -30,14 +29,14 @@ import java.util.*;
 import java.util.regex.*;
 import org.json.*;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 	
-	private MainBinding binding;
+	private HomeBinding binding;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
-		binding = MainBinding.inflate(getLayoutInflater());
+		binding = HomeBinding.inflate(getLayoutInflater());
 		setContentView(binding.getRoot());
 		initialize(_savedInstanceState);
 		initializeLogic();
@@ -47,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 	
 	private void initializeLogic() {
-		binding.codeleafTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/display_bold.ttf"), 0);
-		binding.subtitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_bold.ttf"), 0);
 	}
 	
 }
