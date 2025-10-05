@@ -1,6 +1,6 @@
-# Banglay Programming
+# CodeLeaf - বাংলায় প্রোগ্রামিং
 
-**Banglay Programming** is an Android app project that aims to make programming more accessible by providing resources, tutorials, and examples in the **Bengali language**.  
+**CodeLeaf** is an Android app project that aims to make programming more accessible by providing resources, tutorials, and examples in the **Bengali language**.  
 Most programming materials available online are in English, which can make it difficult for Bengali-speaking learners to start their coding journey. This project is my attempt to bridge that gap.
 
 ---
@@ -78,4 +78,4 @@ This project also serves as part of my personal journey of learning, coding, and
 
 ---
 
-✨ Thanks for checking out **Banglay Programming**. If you’re interested in helping or have suggestions, feel free to connect!
+✨ Thanks for checking out **CodeLeaf**. If you’re interested in helping or have suggestions, feel free to connect!
