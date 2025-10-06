@@ -48,7 +48,7 @@ public class HomeActivity extends AppCompatActivity {
 	
 	private void initializeLogic() {
 		binding.codeleafText.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/display_bold.ttf"), 0);
-		binding.homeSweetHome.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_regular.ttf"), 0);
+		binding.catalog.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_bold.ttf"), 0);
 	}
 	
 }

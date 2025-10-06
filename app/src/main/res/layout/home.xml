@@ -5,22 +5,70 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
-	<TextView
-		android:id="@+id/codeleaf_text"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:padding="8dp"
-		android:gravity="center_horizontal|center_vertical"
-		android:text="@string/app_name"
-		android:textSize="25sp"
-		android:textColor="#09A97D" />
-	<TextView
-		android:id="@+id/home_sweet_home"
+	<LinearLayout
+		android:id="@+id/linear_background"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:padding="8dp"
-		android:gravity="center_horizontal|bottom"
-		android:text="আপনি হোমে আছেন!"
-		android:textSize="12sp"
-		android:textColor="?colorOnSurface" />
+		android:paddingLeft="8dp"
+		android:paddingTop="8dp"
+		android:paddingRight="8dp"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/codeleaf_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="@string/app_name"
+			android:textSize="30sp"
+			android:textColor="#09A97D" />
+		<TextView
+			android:id="@+id/catalog"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="16dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="ক্যাটালগ"
+			android:textSize="25sp"
+			android:textColor="?colorOnSurface" />
+		<HorizontalScrollView
+			android:id="@+id/hscroll2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:layout_gravity="center_horizontal|center_vertical">
+					<androidx.cardview.widget.CardView
+						android:id="@+id/cardview1"
+						android:layout_width="175dp"
+						android:layout_height="250dp"
+						android:layout_margin="8dp"
+						app:contentPadding="8dp"
+						app:cardBackgroundColor="?colorSurfaceVariant"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="20dp" />
+					<androidx.cardview.widget.CardView
+						android:id="@+id/cardview2"
+						android:layout_width="175dp"
+						android:layout_height="250dp"
+						android:layout_margin="8dp"
+						app:contentPadding="8dp"
+						app:cardBackgroundColor="?colorSurfaceVariant"
+						app:cardElevation="2dp"
+						app:cardCornerRadius="20dp" />
+				</LinearLayout>
+			</LinearLayout>
+		</HorizontalScrollView>
+	</LinearLayout>
 </LinearLayout>
