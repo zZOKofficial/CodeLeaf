@@ -23,7 +23,7 @@
 			android:textSize="30sp"
 			android:textColor="#09A97D" />
 		<TextView
-			android:id="@+id/catalog"
+			android:id="@+id/catalog_subtitle"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:paddingBottom="16dp"
