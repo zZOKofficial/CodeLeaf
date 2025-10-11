@@ -3,14 +3,11 @@ package com.zzok.codeleaf;
 import android.animation.*;
 import android.app.*;
 import android.content.*;
-import android.content.Intent;
 import android.content.res.*;
 import android.graphics.*;
-import android.graphics.Typeface;
 import android.graphics.drawable.*;
 import android.media.*;
 import android.net.*;
-import android.net.Uri;
 import android.os.*;
 import android.text.*;
 import android.text.style.*;
@@ -30,24 +27,17 @@ import com.zzok.codeleaf.databinding.*;
 import java.io.*;
 import java.text.*;
 import java.util.*;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.regex.*;
 import org.json.*;
 
-public class MainActivity extends AppCompatActivity {
+public class HtmlActivity extends AppCompatActivity {
 	
-	private Timer _timer = new Timer();
-	
-	private MainBinding binding;
-	
-	private Intent intent = new Intent();
-	private TimerTask timer;
+	private HtmlBinding binding;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
-		binding = MainBinding.inflate(getLayoutInflater());
+		binding = HtmlBinding.inflate(getLayoutInflater());
 		setContentView(binding.getRoot());
 		initialize(_savedInstanceState);
 		initializeLogic();
@@ -57,22 +47,6 @@ public class MainActivity extends AppCompatActivity {
 	}
 	
 	private void initializeLogic() {
-		binding.codeleafTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/display_bold.ttf"), 0);
-		binding.subtitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_bold.ttf"), 0);
-		timer = new TimerTask() {
-			@Override
-			public void run() {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						intent.setClass(getApplicationContext(), HomeActivity.class);
-						startActivity(intent);
-						finish();
-					}
-				});
-			}
-		};
-		_timer.schedule(timer, (int)(1000));
 	}
 	
 }
