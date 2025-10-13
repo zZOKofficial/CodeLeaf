@@ -82,6 +82,22 @@ public class HomeActivity extends AppCompatActivity {
 				startActivity(intent);
 			}
 		});
+		
+		binding.linearC.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				intent.setClass(getApplicationContext(), CplActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		binding.linearPython.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				intent.setClass(getApplicationContext(), PythonActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 	
 	private void initializeLogic() {
@@ -95,6 +111,10 @@ public class HomeActivity extends AppCompatActivity {
 		binding.phpSubtitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_regular.ttf"), 0);
 		binding.sqlTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_bold.ttf"), 0);
 		binding.sqlSubtitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_regular.ttf"), 0);
+		binding.cTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_bold.ttf"), 0);
+		binding.cSubtitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_regular.ttf"), 0);
+		binding.pythonTitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_bold.ttf"), 0);
+		binding.pythonSubtitle.setTypeface(Typeface.createFromAsset(getAssets(),"fonts/bangla_regular.ttf"), 0);
 	}
 	
 }
