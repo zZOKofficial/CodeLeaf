@@ -50,19 +50,6 @@ For now, you’re welcome to explore the repo, suggest ideas, or report issues.
 
 ---
 
-## 📜 License
-
-This project is licensed under the **Creative Commons Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0)**.  
-That means:
-
-- You are free to share and adapt the material **with attribution**  
-- **Commercial use is not allowed** (e.g., uploading this app to the Play Store without permission)  
-
-See the full license text in [LICENSE.md](LICENSE.md).  
-Official summary: [CC BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/)
-
----
-
 ## 👤 Author
 
 Developed and maintained by **Md. Maruf Hossain (zZOK)**.  
